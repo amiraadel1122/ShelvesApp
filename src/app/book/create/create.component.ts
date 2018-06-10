@@ -41,6 +41,7 @@ export class CreateComponent implements OnInit {
       'book_images_attributes': ['', Validators.required],
       'book_images_files': ['', Validators.required]
     });
+    
    }
 
   ngOnInit() {
@@ -56,7 +57,7 @@ export class CreateComponent implements OnInit {
     this.bookImages = [];
 
     // get book data
-    if(book_id){
+    if (book_id) {
       this.bookService.getBook(book_id).subscribe(
         result => {
           this.book = result;
@@ -77,12 +78,11 @@ export class CreateComponent implements OnInit {
           this.isBookStore = true;
           this.bookForm.addControl('price', new FormControl());
           this.bookForm.addControl('quantity', new FormControl());
-        } 
-        else {
+        } else {
           this.bookForm.addControl('transcation', new FormControl());
         }
       }
-    );   
+    );
   }
 
   // Create book
@@ -105,15 +105,15 @@ export class CreateComponent implements OnInit {
   onFileChange(e) {
     console.log (e.target.files);
     this.bookImages = [];
-    for (let file of e.target.files) { 
-      let reader = new FileReader();    
+    for (let file of e.target.files) {
+      const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = (result) => {
         //  console.log(reader.result)
         this.bookImages.push(reader.result);
       };
-      console.log(this.bookImages)
-    }    
+      console.log(this.bookImages);
+    }
   }
 
   // get list of all categories
@@ -129,15 +129,14 @@ export class CreateComponent implements OnInit {
   }
 
   // change form according to transaction
-  onTransactionChange(){
+  onTransactionChange() {
     let transcation = this.bookForm.get('transcation').value;
-    if(transcation == "Sell By Bids"){
+    if (transcation === 'Sell By Bids') {
       this.isBids = true;
       this.bookForm.addControl('price', new FormControl());
-    }  
-    else {
+    } else {
       this.isBids = false;
       this.bookForm.removeControl('price');
-    }  
+    }
   }
 }
