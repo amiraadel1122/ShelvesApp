@@ -41,7 +41,7 @@ export class CreateComponent implements OnInit {
       'book_images_attributes': ['', Validators.required],
       'book_images_files': ['', Validators.required]
     });
-    
+
    }
 
   ngOnInit() {
@@ -105,7 +105,7 @@ export class CreateComponent implements OnInit {
   onFileChange(e) {
     console.log (e.target.files);
     this.bookImages = [];
-    for (let file of e.target.files) {
+    for (const file of e.target.files) {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = (result) => {
@@ -130,7 +130,7 @@ export class CreateComponent implements OnInit {
 
   // change form according to transaction
   onTransactionChange() {
-    let transcation = this.bookForm.get('transcation').value;
+    const transcation = this.bookForm.get('transcation').value;
     if (transcation === 'Sell By Bids') {
       this.isBids = true;
       this.bookForm.addControl('price', new FormControl());
