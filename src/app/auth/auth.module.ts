@@ -15,7 +15,7 @@ import { AppRoutingModule } from '../app-routing.module';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot(), 
+    MDBBootstrapModule.forRoot(),
   ],
   declarations: [
     AuthComponent

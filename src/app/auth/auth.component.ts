@@ -10,7 +10,7 @@ import { UserService } from '../shared';
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent implements OnInit {
-  authType: String = '';
+  authType: any = '';
   title: String = '';
   // errors: Errors = {errors: {}};
   isSubmitting = false;
@@ -37,9 +37,9 @@ export class AuthComponent implements OnInit {
       this.title = (this.authType === 'login') ? 'Sign in' : 'Sign up';
       // add form control for username if this is the register page
       if (this.authType === 'register') {
-        this.authForm.addControl('password_confirmation', new FormControl('',Validators.required));
-        this.authForm.addControl('name', new FormControl('',Validators.required));
-        this.authForm.addControl('role', new FormControl('',Validators.required));
+        this.authForm.addControl('password_confirmation', new FormControl('', Validators.required));
+        this.authForm.addControl('name', new FormControl('', Validators.required));
+        this.authForm.addControl('role', new FormControl('', Validators.required));
       }
     });
   }
