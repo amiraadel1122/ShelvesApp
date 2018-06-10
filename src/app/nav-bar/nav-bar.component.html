@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container ">
     <div class="row">
         <!--Navbar-->
         <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark  rgba-red-strong fixed-top " [containerInside]="true">
 
             <!-- Navbar brand -->
             <logo>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/wS-8.png" width="110px" height="80px" alt="">
+                <a class="navbar-brand" href="index.html" routerLink="/">
+                    <img src="assets/images/ShelvesLogo.png" width="110px" height="80px" alt="">
                 </a>
             </logo>
 
@@ -16,28 +16,27 @@
                 <!-- Links -->
                 <ul class="navbar-nav mr-auto  ">
                     <li class="nav-item active ">
-                        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link waves-light" routerLink="/" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown " dropdown>
                         <a dropdownToggle mdbWavesEffect class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
                 Categories<span class="caret"></span></a>
                         <div *dropdownMenu class="dropdown-menu dropdown " role="menu">
                             <div class="col-lg-4">
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Adventure</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Romance</a>
+                                <a class="dropdown-item waves-light" mdbWavesEffect href="#" *ngFor="let category of firstCatArray">
+                                        {{ category.name }}
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="dropdown-item waves-light" mdbWavesEffect href="#" *ngFor="let category of secondCatArray">
+                                            {{ category.name }}
+                                    </a>
 
                             </div>
                             <div class="col-lg-4">
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Cookbooks</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">History</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Poetry</a>
-
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Mystery</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Encyclopedia</a>
-                                <a class="dropdown-item waves-light" mdbWavesEffect href="#">  Relegios</a>
+                                <a class="dropdown-item waves-light" mdbWavesEffect href="#" *ngFor="let category of thirdCatArray">
+                                            {{ category.name }}
+                                    </a>
 
                             </div>
                         </div>
@@ -55,15 +54,16 @@
 
                 </ul>
                 <!-- Links -->
-
+                <button type="button" class="btn addBookBtn" routerLink="/books/create" mdbWavesEffect><i class="fa fa-plus" aria-hidden="true"></i> Add Book </button>
                 <!-- Search form -->
                 <form class="form-inline waves-light" mdbWavesEffect>
                     <div class="md-form mt-0 mr-5">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search Your Book">
+
                     </div>
 
                 </form>
-                <i class="fa fa-user-circle"></i>
+                <a routerLink="/userprofile" class="prof"> <i class="fa fa-user-circle "></i></a>
             </links>
             <!-- Collapsible content -->
 
