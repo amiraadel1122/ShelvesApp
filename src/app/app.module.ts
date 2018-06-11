@@ -11,11 +11,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { AuthModule } from './auth/auth.module';
 import { BookModule } from './book/book.module';
-
-
-import {
-  SharedModule
-} from './shared';
+// import { RatingModule } from 'primeng/rating';
+import {SharedModule} from './shared';
 
 import { HomeContentComponent } from './home-content/home-content.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,6 +21,8 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { UserProfileComponent } from './profile/user-profile/user-profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +44,8 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     AuthModule,
     BookModule,
     MDBBootstrapModule.forRoot(),
+    // RatingModule,
+
 
   ],
   schemas: [ NO_ERRORS_SCHEMA ],

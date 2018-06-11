@@ -17,8 +17,7 @@ import {
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
-
-  book: Book;
+book: Book;
   currentUser: User;
   bookForm: FormGroup;
   bookFormErrors = {};

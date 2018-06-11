@@ -15,7 +15,7 @@ import {
   styleUrls: ['./show.component.scss']
 })
 export class ShowComponent implements OnInit {
-
+  val: number = 3;
   book: Book;
   currentUser: User;
   canModify: boolean;
@@ -48,6 +48,6 @@ export class ShowComponent implements OnInit {
       error => {
         console.log(error);
        }
-    );    
+    );
   }
 }
