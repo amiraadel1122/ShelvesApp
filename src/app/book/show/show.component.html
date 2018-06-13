@@ -2,161 +2,219 @@
 
 </div>
 <div class="container ">
+    <div class="row">
 
-    <!--Author box-->
-    <div class="author-box  d-flex align-items-start">
-        <!--Name-->
-        <!-- <h3 class="h3-responsive text-center">About author</h3>
+        <!--Author box-->
+        <div class="author-box  d-flex align-items-start">
+            <!--Name-->
+            <!-- <h3 class="h3-responsive text-center">About author</h3>
         <hr> -->
 
-        <!--Avatar-->
-        <div class="col-lg-4 col-md-6 col-sm-2 " height="100px">
-            <img src="assets/images/download.png" class="img-fluid z-depth-2">
+            <!--Avatar-->
+            <div class="col-lg-4 col-md-6 col-sm-2 " height="100px">
+                <img src="assets/images/download.png" class="img-fluid z-depth-2">
 
-        </div>
+            </div>
 
-        <!--Author Data-->
-        <div class=" col-lg-8 col-sm-10">
+            <!--Author Data-->
+            <div class=" col-lg-8 col-sm-10">
 
-            <div class="personal-sm col-lg-8">
-                <ul>
-                    <!--book Name-->
-                    <li>
-                        <p><strong>THE LAST BREATH</strong></p>
-                        <hr>
-                    </li>
-                    <li> <label for="" class="font-weight-bold">Category : </label> book category </li>
-                    <li> <label for="" class="font-weight-bold">Description : </label> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, nihil ducimus? Quod nihil cupiditate quaerat illo atque nostrum veritatis sint eum fuga, necessitatibus
-                        commodi hic enim alias, maxime quos beatae? </li>
-                    <li> <label for="" class="font-weight-bold">For : </label> sell</li>
-                    <li> <label for="" class="font-weight-bold">Price : </label> 23 <label class="font-weight-bold">  L.E</label> </li>
-                    <li> <label for="" class="font-weight-bold">Quantity : </label> 4</li>
-                    <li> <label for="" class="font-weight-bold">For bid till : </label> 15-7-2018 </li>
+                <div class="personal-sm col-lg-8">
+                    <ul>
+                        <!--book Name-->
+                        <li>
+                            <h3><strong>THE LAST BREATH</strong></h3>
+                            <hr>
+                        </li>
+                        <li> <label for="" class="font-weight-bold">Category : </label> book category </li>
+                        <li> <label for="" class="font-weight-bold">Description : </label> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, nihil ducimus? Quod nihil cupiditate quaerat illo atque nostrum veritatis sint eum fuga, necessitatibus
+                            commodi hic enim alias, maxime quos beatae? </li>
+                        <li> <label for="" class="font-weight-bold">For : </label> sell</li>
+                        <li> <label for="" class="font-weight-bold">Price : </label> 23 <label class="font-weight-bold">  L.E</label> </li>
+                        <li> <label for="" class="font-weight-bold">Quantity : </label> 4</li>
+                        <li> <label for="" class="font-weight-bold">For bid till : </label> 15-7-2018 </li>
 
-                    <!--Rating-->
-                    <!-- <p-rating [(ngModel)]="val" formControlName="score"></p-rating> -->
-                    <li> <button type="button" class="btn peach waves-light" data-toggle="modal" data-target="#basicExample" (click)="fluid.show()" mdbWavesEffect>
+                        <li> <button type="button" class="btn peach waves-light" data-toggle="modal" data-target="#basicExample" (click)="fluid.show()" mdbWavesEffect>
                         Order now
                     </button>
+                            <!--Exchange order -->
 
-                        <div mdbModal #fluid="mdb-modal" class="modal fade bottom" id="fullHeightModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-full-height modal-bottom" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title w-100" id="myModalLabel">Choose books for exchange</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluid.hide()">
+                            <div mdbModal #fluid="mdb-modal" class="modal fade bottom" id="fullHeightModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-full-height modal-bottom" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title w-100" id="myModalLabel">Choose books for exchange</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluid.hide()">
                                         <span aria-hidden="true">×</span>
                                     </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p> Choose from your shelf which books you need to exchange with...
-                                        </p>
-                                        <ul>
-                                            <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb1" />
-                                                <label for="cb1"><img src="assets/images/Young_Adult_Romance_Book_if_i_stay.jpg" /></label>
-                                            </li>
-                                            <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb2" />
-                                                <label for="cb2"><img src="assets/images/9780751550047.jpg" /></label>
-                                            </li>
-                                            <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb3" />
-                                                <label for="cb3"><img src="assets/images/books-trophy-child.jpg" /></label>
-                                            </li>
-                                            <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb4" />
-                                                <label for="cb4"><img src="assets/images/41865.jpg" /></label>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p> Choose from your shelf which books you need to exchange with...
+                                            </p>
+                                            <ul>
+                                                <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb1" />
+                                                    <label for="cb1"><img src="assets/images/Young_Adult_Romance_Book_if_i_stay.jpg" /></label>
+                                                </li>
+                                                <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb2" />
+                                                    <label for="cb2"><img src="assets/images/9780751550047.jpg" /></label>
+                                                </li>
+                                                <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb3" />
+                                                    <label for="cb3"><img src="assets/images/books-trophy-child.jpg" /></label>
+                                                </li>
+                                                <li class="view overlay hm-white-slight zoom"><input type="checkbox" id="cb4" />
+                                                    <label for="cb4"><img src="assets/images/41865.jpg" /></label>
+                                                </li>
+                                            </ul>
 
-                                    </div>
-                                    <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn btn-danger waves-light" data-dismiss="modal" (click)="fluid.hide()" mdbWavesEffect>Close</button>
-                                        <button type="button" class="btn btn-primary waves-light" mdbWavesEffect>Save changes</button>
+                                        </div>
+                                        <div class="modal-footer justify-content-center">
+                                            <button type="button" class="btn btn-danger waves-light" data-dismiss="modal" (click)="fluid.hide()" mdbWavesEffect>Close</button>
+                                            <button type="button" class="btn btn-primary waves-light" mdbWavesEffect>Save changes</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
 
+
+                </div>
 
             </div>
 
+
         </div>
-
-
     </div>
     <!--/.Author box-->
-    <h2 class="col-lg-12 mt-5 title">Book images</h2>
-    <hr class="mb-5 col-lg-12">
-    <div class="container animated bounceInUp mt-5 " id="content">
-        <div class="row">
+    <div class="row">
+        <h2 class="col-lg-12 mt-5 title">Book images</h2>
+        <hr class="mb-5 col-lg-12">
+        <div class="container animated bounceInUp mt-5 " id="content">
+            <div class="row">
 
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-r ">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r ">
 
-                <!--Card-->
-                <div class="card card-cascade narrower">
+                    <!--Card-->
+                    <div class="card card-cascade narrower">
 
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight zoom">
-                        <img src="assets/images/download.png" class="img-fluid" alt="">
-                        <a>
-                            <div class="mask"></div>
-                        </a>
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight zoom">
+                            <img src="assets/images/download.png" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+
+
                     </div>
-                    <!--/.Card image-->
-
-
+                    <!--/.Card-->
 
                 </div>
-                <!--/.Card-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
 
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-r">
+                    <!--Card-->
+                    <div class="card card-cascade narrower">
 
-                <!--Card-->
-                <div class="card card-cascade narrower">
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight zoom">
+                            <img src="assets/images/books-trophy-child.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
 
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight zoom">
-                        <img src="assets/images/books-trophy-child.jpg" class="img-fluid" alt="">
-                        <a>
-                            <div class="mask"></div>
-                        </a>
+
                     </div>
-                    <!--/.Card image-->
-
+                    <!--/.Card-->
 
                 </div>
-                <!--/.Card-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-r">
 
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-r">
+                    <!--Card-->
+                    <div class="card card-cascade narrower">
 
-                <!--Card-->
-                <div class="card card-cascade narrower">
-
-                    <!--Card image-->
-                    <div class="view overlay hm-white-slight zoom">
-                        <img src="assets/images/5346.jpg" class="img-fluid" alt="">
-                        <a>
-                            <div class="mask"></div>
-                        </a>
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight zoom">
+                            <img src="assets/images/5346.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
                     </div>
-                    <!--/.Card image-->
-
-
-                    <!--/.Card content-->
-
+                    <!--/.Card-->
                 </div>
-                <!--/.Card-->
-
+                <!--Grid column-->
             </div>
-            <!--Grid column-->
+        </div>
+    </div>
+    <!--Comments-->
+    <div class="row mt-5">
+        <h3 class="col-lg-8 pb-3 dotted">Comments</h3>
 
+        <div class="md-form col-lg-8 mb-5">
+
+            <i class="fa fa-pencil prefix fa-rotate-270"></i>
+            <textarea mdbInputDirective type="text" id="form8" class="md-textarea form-control " rows="3"></textarea>
+            <label for="form8">Write a comment...</label>
+            <button class="actionbBtn col-lg-2">Submit</button>
         </div>
 
+    </div>
+    <div class="row">
+
+        <!--Commented-->
+        <div class="media">
+            <img class="d-flex mr-3 " src="assets/images/freestocks-org-209880-unsplash.jpg" alt="Generic placeholder image">
+            <div class="media-body ">
+                <h5 class="mt-0">Monica Magdy</h5>
+                <p> Cras sit amet nibh libero, in gravida nulla. Nulla vetudin.Fusce condimentum nunc ac nisi faucibus.
+                </p>
+                <!--Comment actions-->
+                <button class="actionbBtn">Reply</button>
+                <button class=" waves-light actionbBtn" (click)="style.show()" mdbWavesEffect>Delete</button>
+
+                <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-danger" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="heading lead">Delete comment</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                       <span aria-hidden="true" class="white-text">×</span>
+                   </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <p>Are you sure you want to delete this comment ?</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+
+                                <a type="button" class="btn  btn-primary waves-light" mdbWavesEffect>Yes</a>
+                                <a type="button" class="btn btn-danger" data-dismiss="modal" (click)="style.hide()" mdbWavesEffect>Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Comment actions-->
+                <!--Reply-->
+                <div class="media mt-3">
+                    <a class="d-flex pr-3" href="#">
+                        <img src="assets/images/dorothy-puscas-445419-unsplash.jpg" alt="Generic placeholder image">
+                    </a>
+                    <div class="media-body">
+                        <h5 class="mt-0">Amira Adel</h5>
+                        Cras sit amet nibh libero, in gravida nulla tempus vinunc ac nisi vulputate fringilla.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
