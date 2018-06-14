@@ -15,7 +15,7 @@ import {
   styleUrls: ['./show.component.scss']
 })
 export class ShowComponent implements OnInit {
-  val: number = 3;
+  val = 3;
   book: Book;
   currentUser: User;
   canModify: boolean;

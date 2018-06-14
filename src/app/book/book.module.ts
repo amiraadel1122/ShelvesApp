@@ -5,6 +5,8 @@ import { CreateComponent } from './create/create.component';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {RatingModule} from 'primeng/rating';
+
 
 @NgModule({
   imports: [
@@ -13,6 +15,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     FormsModule,
     ReactiveFormsModule,
     MDBBootstrapModule.forRoot(),
+    RatingModule
   ],
   declarations: [ShowComponent, CreateComponent]
 })
