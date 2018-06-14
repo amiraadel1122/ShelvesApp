@@ -13,7 +13,7 @@ import {
   styleUrls: ['./home-content.component.scss']
 })
 export class HomeContentComponent implements OnInit {
-
+  val = 3;
   firstLatestBooks: Array<Book>;
   secondLatestBooks: Array<Book>;
   thirdLatestBooks: Array<Book>;

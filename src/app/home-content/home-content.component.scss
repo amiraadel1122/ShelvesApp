@@ -34,3 +34,7 @@
         font-size: 20px;
     }
 }
+
+:host /deep/ .ui-rating-cancel {
+    color: transparent;
+}

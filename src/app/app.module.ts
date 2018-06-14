@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , NO_ERRORS_SCHEMA} from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
+import {RatingModule} from 'primeng/rating';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -44,7 +44,7 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     AuthModule,
     BookModule,
     MDBBootstrapModule.forRoot(),
-    // RatingModule,
+    RatingModule
 
 
   ],
