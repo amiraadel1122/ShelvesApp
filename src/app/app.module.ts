@@ -21,6 +21,7 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { UserProfileComponent } from './profile/user-profile/user-profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -35,7 +36,9 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     SignUpComponent,
     SignInComponent,
     UserProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    OrderComponent,
+    
   ],
   imports: [
     BrowserModule,

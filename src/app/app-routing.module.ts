@@ -9,6 +9,8 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { UserProfileComponent } from './profile/user-profile/user-profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { OrderComponent } from './order/order.component';
+
 const routes: Routes = [
   {
     path: '' ,
@@ -54,12 +56,12 @@ const routes: Routes = [
   {
     path: 'editprofile',
     component : EditProfileComponent
-  }
+  },
 
-  // {
-  //   path:"ForgetPassword",
-  //   component:ForgetPasswordComponent
-  // }
+  {
+    path: 'order',
+    component: OrderComponent
+  }
 
 ];
 

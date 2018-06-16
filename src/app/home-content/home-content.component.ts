@@ -19,7 +19,7 @@ export class HomeContentComponent implements OnInit {
   thirdLatestBooks: Array<Book>;
   constructor(
     private bookService: BookService
-  ) { 
+  ) {
 
   }
 
@@ -32,18 +32,13 @@ export class HomeContentComponent implements OnInit {
     this.bookService.getLatest().subscribe(
       result => {
         result = result['data'];
-          for(let i = 0; i < result.length; i++){
-            if(i <= result.length/3)
-              {
+          for (let i = 0; i < result.length; i++) {
+            if (i <= result.length / 3) {
                 this.firstLatestBooks.push(result[i]);
-              }
-            else if(i <= result.length*2/3)
-              {
+              } else if (i <= result.length * 2 / 3) {
 
                 this.secondLatestBooks.push(result[i]);
-              }
-            else
-              {
+              } else {
                 this.thirdLatestBooks.push(result[i]);
               }
           }
