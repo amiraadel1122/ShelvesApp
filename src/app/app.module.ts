@@ -38,7 +38,8 @@ import { OrderComponent } from './order/order.component';
     UserProfileComponent,
     EditProfileComponent,
     OrderComponent,
-    
+
+
   ],
   imports: [
     BrowserModule,

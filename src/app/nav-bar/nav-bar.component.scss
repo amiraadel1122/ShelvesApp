@@ -8,12 +8,18 @@
     margin-right: 18px;
 }
 
-.prof {
+.search {
+    width: 260px;
+}
+
+.profile {
     i {
         color: floralwhite;
         font-size: 30px;
-        margin-right: -18px;
-        margin-left: 20px;
+    }
+    .dropdown-menu {
+        left: -50px;
+        top: 69px;
     }
 }
 
@@ -51,8 +57,13 @@ i.fa.fa-bell {
     }
 }
 
+.btn-group,
+.btn-group-vertical {
+    left: 30px;
+}
+
 .noti.dropdown-menu.fadeInDropdown {
-    margin-left: -160px;
+    margin-left: -180px;
     width: 345px;
     margin-top: 35px;
     ul {

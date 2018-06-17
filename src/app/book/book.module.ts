@@ -7,7 +7,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {RatingModule} from 'primeng/rating';
 import {KeyFilterModule} from 'primeng/keyfilter';
-
+import {   BookListComponent } from './book-list/book-list.component';
 
 
 @NgModule({
@@ -20,6 +20,6 @@ import {KeyFilterModule} from 'primeng/keyfilter';
     RatingModule,
     KeyFilterModule
   ],
-  declarations: [ShowComponent, CreateComponent]
+  declarations: [ShowComponent, CreateComponent ,   BookListComponent]
 })
 export class BookModule { }

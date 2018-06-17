@@ -10,6 +10,8 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { UserProfileComponent } from './profile/user-profile/user-profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { OrderComponent } from './order/order.component';
+import { BookListComponent } from './book/book-list/book-list.component';
+
 
 const routes: Routes = [
   {
@@ -61,6 +63,10 @@ const routes: Routes = [
   {
     path: 'order',
     component: OrderComponent
+  },
+  {
+    path: 'BookList',
+    component: BookListComponent
   }
 
 ];

@@ -58,7 +58,7 @@
                 <!-- Search form -->
                 <form class="form-inline waves-light" mdbWavesEffect>
                     <div class="md-form mt-0 mr-5">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search Your Book">
+                        <input class="form-control mr-sm-2 search" type="text" placeholder="Search Your Book">
 
                     </div>
 
@@ -73,7 +73,7 @@
 
                     <!--notification badge-->
 
-                    <div class="dropdown-menu noti scrollbar scrollbar-warning">
+                    <div class="dropdown-menu fadeInDropdown noti scrollbar scrollbar-warning">
 
                         <div class="notiHeader">
 
@@ -115,7 +115,19 @@
                 </div>
 
                 <!--End Notifications-->
-                <a routerLink="/userprofile" class="prof"> <i class="fa fa-user-circle"></i></a>
+                <div class="btn-group profile " dropdown>
+                    <button dropdownToggle type="" class="btndropdown-toggle waves-light " mdbWavesEffect>
+                        <i class="fa fa-user-circle"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-primary fadeInDropdown">
+                        <a class="dropdown-item" routerLink="/userprofile">My Profile</a>
+                        <a class="dropdown-item" routerLink="/editprofile">Settings</a>
+                        <div class="divider dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </div>
+                <!-- <a routerLink="/userprofile" class="prof " dropdown> <i class="fa fa-user-circle"></i>
+                </a> -->
             </links>
             <!-- Collapsible content -->
 
