@@ -33,6 +33,7 @@
                         <li> <label for="" class="font-weight-bold">Price : </label> 23 <label class="font-weight-bold">  L.E</label> </li>
                         <li> <label for="" class="font-weight-bold">Quantity : </label> 4</li>
                         <li> <label for="" class="font-weight-bold">For bid till : </label> 15-7-2018 </li>
+                        <li> <label for="" class="font-weight-bold">Current Price : </label> 10 <label class="font-weight-bold">  L.E</label></li>
                         <li> <label for="" class="font-weight-bold">Rate : </label>
                             <p-rating [(ngModel)]="val" class="rates"></p-rating>
                         </li>
@@ -78,7 +79,40 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--/Exchange order -->
                         </li>
+
+
+
+                        <!--Bid order -->
+                        <div class="bidOffer">
+                            <button type="button" class="btn peach relative waves-light" (click)="basicModal.show()" mdbWavesEffect>Order Now</button>
+
+                            <div mdbModal #basicModal="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                            <h4 class="modal-title w-100" id="myModalLabel">Put Your Offer
+                                            </h4>
+                                        </div>
+                                        <!--offer input-->
+                                        <div class="modal-body">
+                                            <input type="number" pKeyFilter="int" placeholder="put a price" min="10">
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Cancel</button>
+                                            <button type="button" class="btn btn-primary relative waves-light" mdbWavesEffect>Done</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--/Bid order -->
                     </ul>
 
 

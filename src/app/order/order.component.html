@@ -6,9 +6,12 @@
         <h3 class="text-center mb-2">Order Details</h3>
         <hr>
     </div>
-    <!-- If It Is An Exchange Order  -->
     <h2 class="h1 font-weight-bold text-center mb-4">
-        <span class="badge lighten-1 ">Exchange</span>
+        <!-- If It Is An Exchange Order  -->
+        <!-- <span class="badge lighten-1 ">Exchange</span> -->
+        <!-- If It Is A Sell Order  -->
+        <span class="badge lighten-1 ">Sell</span>
+
     </h2>
     <div class="row  d-flex justify-content-center mb-4">
         <div class="userImg">
@@ -18,35 +21,54 @@
             </a>
         </div>
     </div>
-    <div class="row d-flex justify-content-center">
+    <!-- If It Is An Exchange Order  -->
+    <!-- <div class="exchangeOrder">
+        <div class="row d-flex justify-content-center">
 
-        <div class="personal-sm col-lg-4 col-sm-10">
+            <div class="personal-sm col-lg-4 col-sm-10">
 
-            <h5 class="mb-4">Required your book </h5>
+                <h5 class="mb-4">Required your book </h5>
 
-            <img src="assets/images/jessica-to-oto-o-585175-unsplash.jpg" class="orderImg z-depth-2">
-            <i class="fa fa-exchange" aria-hidden="true"></i>
+                <img src="assets/images/jessica-to-oto-o-585175-unsplash.jpg" class="orderImg z-depth-2">
+                <i class="fa fa-exchange" aria-hidden="true"></i>
+            </div>
+
+
+
+            <div class="personal-sm col-lg-8 col-sm-10 col-sm-10  ">
+
+                <h5 class="mb-4 ml-5">to exchange with one of his images </h5>
+                <ul>
+                    <li><input type="checkbox" id="cb1" />
+                        <label for="cb1"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
+                    </li>
+                    <li><input type="checkbox" id="cb2" />
+                        <label for="cb2"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
+                    </li>
+                    <li><input type="checkbox" id="cb3" />
+                        <label for="cb3"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- /If It Is An Exchange Order  -->
+
+    <!-- If It Is An Sell Order  -->
+
+    <div class="sellOrder d-flex justify-content-center">
+
+        <div class="personal-sm">
+
+            <h5 class="mb-4">Wanted to buy your book </h5>
+
+            <a> <img src="assets/images/jessica-to-oto-o-585175-unsplash.jpg" class="orderImg z-depth-2"></a>
+
         </div>
 
-
-
-        <div class="personal-sm col-lg-8 col-sm-10 col-sm-10  ">
-
-            <h5 class="mb-4 ml-5">to exchange with one of his images </h5>
-            <ul>
-                <li><input type="checkbox" id="cb1" />
-                    <label for="cb1"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
-                </li>
-                <li><input type="checkbox" id="cb2" />
-                    <label for="cb2"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
-                </li>
-                <li><input type="checkbox" id="cb3" />
-                    <label for="cb3"><img class="orderImg z-depth-2 mr-2 mb-2" src="assets/images/thought-catalog-452664-unsplash.jpg"  /></label>
-                </li>
-
-            </ul>
-        </div>
     </div>
+    <!-- /If It Is An Sell Order  -->
     <div class="row d-flex justify-content-center mt-5">
         <button type="button" class="btn btn-danger waves-light col-4" data-dismiss="modal" mdbWavesEffect>Dismiss</button>
         <button type="button" class="btn btn-primary waves-light col-4" mdbWavesEffect>Confirm</button>

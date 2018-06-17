@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {RatingModule} from 'primeng/rating';
+import {KeyFilterModule} from 'primeng/keyfilter';
+
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import {RatingModule} from 'primeng/rating';
     FormsModule,
     ReactiveFormsModule,
     MDBBootstrapModule.forRoot(),
-    RatingModule
+    RatingModule,
+    KeyFilterModule
   ],
   declarations: [ShowComponent, CreateComponent]
 })
