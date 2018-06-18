@@ -11,7 +11,7 @@ import { UserProfileComponent } from './profile/user-profile/user-profile.compon
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { OrderComponent } from './order/order.component';
 import { BookListComponent } from './book/book-list/book-list.component';
-
+import { NotificationListComponent} from './notification-list/notification-list.component'
 
 const routes: Routes = [
   {
@@ -67,6 +67,10 @@ const routes: Routes = [
   {
     path: 'BookList',
     component: BookListComponent
+  },
+  {
+    path: 'NotificationList',
+    component: NotificationListComponent
   }
 
 ];

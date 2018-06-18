@@ -22,6 +22,7 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { UserProfileComponent } from './profile/user-profile/user-profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { OrderComponent } from './order/order.component';
+import { NotificationListComponent } from './notification-list/notification-list.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { OrderComponent } from './order/order.component';
     UserProfileComponent,
     EditProfileComponent,
     OrderComponent,
+    NotificationListComponent,
 
 
   ],
