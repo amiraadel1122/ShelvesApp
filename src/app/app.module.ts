@@ -24,6 +24,7 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
 import { OrderComponent } from './order/order.component';
 import { NotificationListComponent } from './notification-list/notification-list.component';
 import { StoresComponent } from './stores/stores.component';
+import { DeliveryPlacesComponent } from './delivery-places/delivery-places.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { StoresComponent } from './stores/stores.component';
     OrderComponent,
     NotificationListComponent,
     StoresComponent,
+    DeliveryPlacesComponent,
 
 
   ],

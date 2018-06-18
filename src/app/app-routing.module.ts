@@ -13,6 +13,7 @@ import { OrderComponent } from './order/order.component';
 import { BookListComponent } from './book/book-list/book-list.component';
 import { NotificationListComponent} from './notification-list/notification-list.component';
 import { StoresComponent } from './stores/stores.component';
+import { DeliveryPlacesComponent } from './delivery-places/delivery-places.component';
 const routes: Routes = [
   {
     path: '' ,
@@ -75,7 +76,11 @@ const routes: Routes = [
   {
     path: 'Stores',
     component: StoresComponent
-  }
+  },
+  {
+    path: 'DeliveryPlaces',
+component: DeliveryPlacesComponent
+}
 
 ];
 
