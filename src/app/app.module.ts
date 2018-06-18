@@ -23,6 +23,7 @@ import { UserProfileComponent } from './profile/user-profile/user-profile.compon
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { OrderComponent } from './order/order.component';
 import { NotificationListComponent } from './notification-list/notification-list.component';
+import { StoresComponent } from './stores/stores.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { NotificationListComponent } from './notification-list/notification-list
     EditProfileComponent,
     OrderComponent,
     NotificationListComponent,
+    StoresComponent,
 
 
   ],

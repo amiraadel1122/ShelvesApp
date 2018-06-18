@@ -11,8 +11,8 @@ import { UserProfileComponent } from './profile/user-profile/user-profile.compon
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { OrderComponent } from './order/order.component';
 import { BookListComponent } from './book/book-list/book-list.component';
-import { NotificationListComponent} from './notification-list/notification-list.component'
-
+import { NotificationListComponent} from './notification-list/notification-list.component';
+import { StoresComponent } from './stores/stores.component';
 const routes: Routes = [
   {
     path: '' ,
@@ -71,6 +71,10 @@ const routes: Routes = [
   {
     path: 'NotificationList',
     component: NotificationListComponent
+  },
+  {
+    path: 'Stores',
+    component: StoresComponent
   }
 
 ];
