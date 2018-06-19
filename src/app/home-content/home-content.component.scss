@@ -2,6 +2,20 @@
     height: 40px;
 }
 
+$robotoFont: Roboto,
+sans-serif;
+body {
+    font-display: $robotoFont;
+}
+
+// .mis-slider {
+//     background-color: #d536361a;
+//     li {
+//         img {
+//             border-radius: 40px;
+//         }
+//     }
+// }
 .card {
     height: 100%;
     margin-bottom: 20px;

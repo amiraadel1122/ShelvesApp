@@ -25,6 +25,7 @@ import { OrderComponent } from './order/order.component';
 import { NotificationListComponent } from './notification-list/notification-list.component';
 import { StoresComponent } from './stores/stores.component';
 import { DeliveryPlacesComponent } from './delivery-places/delivery-places.component';
+import { CategorieSliderComponent } from './categorie-slider/categorie-slider.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { DeliveryPlacesComponent } from './delivery-places/delivery-places.compo
     NotificationListComponent,
     StoresComponent,
     DeliveryPlacesComponent,
+    CategorieSliderComponent,
 
 
   ],

@@ -33,12 +33,19 @@
                             "node_modules/primeicons/primeicons.css",
                             "node_modules/primeng/resources/themes/omega/theme.css",
                             "node_modules/primeng/resources/primeng.min.css",
+                            "bower_components/mislider/dist/css/mislider.css",
+                            "bower_components/mislider/dist/css/mislider-skin-cameo.css",
+                            "bower_components/mislider/dist/css/styles.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js",
                             "node_modules/chart.js/dist/Chart.js",
-                            "node_modules/hammerjs/hammer.min.js"
+                            "node_modules/hammerjs/hammer.min.js",
+                            "bower_components/mislider/dist/js/modernizr/modernizr-custom.min.js",
+                            "bower_components/mislider/dist/js/jquery/jquery.min.js",
+                            "bower_components/mislider/dist/js/mislider.js",
+                            "src/assets/mislider/script.js"
                         ]
                     },
                     "configurations": {
